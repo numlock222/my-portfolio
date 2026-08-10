@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numlock222 | portfolio</title>
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- エンジニア向けフォント（Fira Code）の読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Fira Code', monospace; }
+        .bg-red-hat { background-color: #E00025; } /* Red Hat風の赤 */
+        .bg-dark-hat { background-color: #111111; } /* 深い黒 */
+    </style>
+</head>
+<body class="bg-dark-hat text-gray-300 min-h-screen selection:bg-red-hat selection:text-white flex flex-col">
+
+    <!-- ==========================================
+         上部：ヘッダーナビゲーション（赤）
+    =========================================== -->
+    <header class="bg-red-hat text-white sticky top-0 z-50 border-b-4 border-red-900 shadow-xl">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+            
+            <!-- ロゴ・タイトル -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-2xl md:text-3xl font-bold tracking-wider">NUMLOCK222 OFFICIAL</h1>
+                <p class="text-xs font-semibold tracking-widest opacity-90 mt-1">INFRA & EMBEDDED ENGINEER</p>
+            </div>
+
+            <!-- メニューリンク -->
+            <nav class="flex space-x-6 lg:space-x-10 text-base font-bold">
+                <!-- 現在のページ -->
+                <a href="index.html" class="flex items-center space-x-1 text-white border-b-2 border-white pb-1">
+                    <span class="text-xl">_</span><span>HOME</span>
+                </a>
+                <!-- 他のページ -->
+                <a href="projects.html" class="flex items-center space-x-1 text-white/60 hover:text-white transition-colors duration-300 pb-1">
+                    <span class="text-xl">></span><span>PROJECTS</span>
+                </a>
+                <a href="reports.html" class="flex items-center space-x-1 text-white/60 hover:text-white transition-colors duration-300 pb-1">
+                    <span class="text-xl">></span><span>REPORTS</span>
+                </a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- ==========================================
+         メインコンテンツ（黒）
+    =========================================== -->
+    <!-- ヘッダーの下に配置。max-w-5xl で横幅が広がりすぎないように調整 -->
+    <main class="flex-grow w-full max-w-5xl mx-auto p-6 md:p-12 lg:p-16">
+        
+        <!-- ABOUT ME & PROFILE セクション -->
+        <section class="mb-20 animate-fade-in-up">
+            
+            <!-- 1. PROFILE (基本情報) -->
+            <h2 class="text-3xl font-bold text-white mb-6 border-l-4 border-red-hat pl-4">
+                <span class="text-red-hat mr-2">#</span>PROFILE
+            </h2>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg mb-12">
+                <ul class="space-y-4 text-lg text-gray-300">
+                    <li class="flex border-b border-gray-800 pb-3">
+                        <span class="w-32 font-bold text-gray-500">NAME</span>
+                        <span>三田村 季</span>
+                    </li>
+                    <li class="flex border-b border-gray-800 pb-3">
+                        <span class="w-32 font-bold text-gray-500">BIRTH DATE</span>
+                        <span>2005年9月23日 (現在20歳)</span>
+                    </li>
+                    <li class="flex border-b border-gray-800 pb-3">
+                        <span class="w-32 font-bold text-gray-500">SCHOOL</span>
+                        <span>日本工学院専門学校 ITスペシャリスト科 セキュリティ専攻 3年</span>
+                    </li>
+                    <li class="flex border-b border-gray-800 pb-3">
+                        <span class="w-32 font-bold text-gray-500">CIRCLE</span>
+                        <span>Internal Sandbox</span>
+                    </li>
+                    <li class="flex border-b border-gray-800 pb-3">
+                        <span class="w-32 font-bold text-gray-500">GOAL</span>
+                        <span>組込みエンジニア、インフラエンジニア</span>
+                    </li>
+                    <li class="flex pt-1">
+                        <span class="w-32 font-bold text-gray-500">LICENSE</span>
+                        <span>2025年2月 基本情報技術者試験 合格</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 2. VISION (目指すエンジニア像) -->
+            <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                <span class="text-red-hat mr-2">></span> VISION
+            </h3>
+            <div class="space-y-4 text-gray-400 leading-relaxed text-lg mb-12 border-l-2 border-gray-800 pl-4">
+                <p>
+                    セキュリティ専攻で培った視点を活かし、社会基盤を支えるセキュアで絶対に止まらないインフラ環境と組込みシステムを構築できるエンジニアを目指しています。
+                </p>
+                <p>
+                    単にコードを書くだけではなく、「ネットワークのルールに従って動くインフラの本質」や「Make/GDBを用いた泥臭いビルド・デバッグ」など、低レイヤの仕組みを深く理解し、原因究明から逃げない姿勢が強みです。また、AtCoder等を通じて実践的なアルゴリズム構築力の向上にも努めています。
+                </p>
+                <p>
+                    将来的には、持ち前のチャレンジ精神とチームワークを活かし、インフラと組込みの知見を掛け合わせることで、開発と運用の両面から現場の課題を解決できる人材として活躍したいと考えています。
+                </p>
+            </div>
+
+            <!-- 3. HOBBIES & INTERESTS (趣味・関心) -->
+            <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                <span class="text-red-hat mr-2">></span> HOBBIES & INTERESTS
+            </h3>
+            
+            <div class="space-y-6">
+                <!-- 趣味カード：写真撮影（メイン枠） -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg border-l-4 border-l-red-hat">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <h4 class="text-xl font-bold text-white flex items-center">
+                            <span class="mr-2">📷</span> 写真撮影（Photography）
+                        </h4>
+                        <span class="text-xs text-gray-500 font-mono mt-1 md:mt-0">CAMERA / OPTICS / COMPOSITION</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        夜の風景や建造物、日常の一瞬を切り取ることが好きです。あまり遠出しないので東京の風景ばかりですが、来年の1月に海外研修でシンガポールに行くので現地での夜の風景をカメラに収めたいです。
+                    </p>
+
+                    <!-- Photo Gallery (写真表示グリッド) -->
+                    <!-- ※ src属性（"images/photo1.JPEG"など）にご自身の画像ファイルのパスを指定してください -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <!-- 写真1 -->
+                        <div class="group relative aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gray-700/50">
+                            <img src="images/photo1.JPEG" alt="撮影写真1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                                <span class="text-xs text-white font-mono">Photo #01</span>
+                            </div>
+                        </div>
+                        <!-- 写真2 -->
+                        <div class="group relative aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gray-700/50">
+                            <img src="images/photo2.JPEG" alt="撮影写真2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                                <span class="text-xs text-white font-mono">Photo #02</span>
+                            </div>
+                        </div>
+                        <!-- 写真3 -->
+                        <div class="group relative aspect-square bg-gray-800 rounded-lg overflow-hidden border border-gray-700/50">
+                            <img src="images/photo3.JPEG" alt="撮影写真3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                                <span class="text-xs text-white font-mono">Photo #03</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH STACK セクション -->
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-red-hat pl-4">
+                <span class="text-red-hat mr-2">#</span>TECH STACK
+            </h2>
+            
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <!-- LANGUAGES -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-red-hat transition-colors duration-300">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <span class="text-red-hat mr-2">&lt;/&gt;</span> LANGUAGES
+                    </h3>
+                    <p class="text-white font-bold text-lg mb-2">C / C++ / Python / PHP</p>
+                    <p class="text-gray-500 text-sm">OpenCV / mediapipe / MySQL / AtCoder</p>
+                </div>
+
+                <!-- INFRASTRUCTURE -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg hover:border-red-hat transition-colors duration-300">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <span class="text-red-hat mr-2">🗄</span> INFRASTRUCTURE
+                    </h3>
+                    <p class="text-white font-bold text-lg mb-2">Linux (CentOS8, AlmaLinux10, Fedora41)</p>
+                    <p class="text-gray-500 text-sm">httpd / MariaDB / Postfix / bind-chroot</p>
+                </div>
+
+                <!-- DEV TOOLS (GDBとMakeを強調・復活) -->
+                    <div class="bg-gray-900 border border-red-hat/50 p-6 rounded-lg shadow-[0_0_15px_rgba(224,0,37,0.1)] hover:border-red-hat transition-colors duration-300 xl:col-span-2">
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-red-hat mr-2">⚙</span> DEV TOOLS & ENVIRONMENT
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-red-hat/20 text-red-400 border border-red-hat/30 rounded font-bold">Make</span>
+                            <span class="px-3 py-1 bg-red-hat/20 text-red-400 border border-red-hat/30 rounded font-bold">GDB</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-400 rounded">Git / GitHub</span>
+                            <!-- ↓ここに追加↓ -->
+                            <span class="px-3 py-1 bg-gray-800 text-gray-400 rounded">VS Code</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-400 rounded">JetBrains(Clion)</span>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
